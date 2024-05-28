@@ -1,0 +1,10 @@
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\bin\Debug\Lab 02.exe.config
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\bin\Debug\Lab 02.exe
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\bin\Debug\Lab 02.pdb
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\obj\Debug\Lab 02.csproj.AssemblyReference.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\obj\Debug\Lab_02.Form1.resources
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\obj\Debug\Lab_02.Properties.Resources.resources
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\obj\Debug\Lab 02.csproj.GenerateResource.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\obj\Debug\Lab 02.csproj.CoreCompileInputs.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\obj\Debug\Lab 02.exe
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02\Lab 02\Lab 02\obj\Debug\Lab 02.pdb

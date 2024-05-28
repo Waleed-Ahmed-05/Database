@@ -1,0 +1,19 @@
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\bin\Debug\Lab_02.exe.config
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\bin\Debug\Lab_02.exe
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\bin\Debug\Lab_02.pdb
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\obj\Debug\Lab_02.csproj.AssemblyReference.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\obj\Debug\Lab_02.Properties.Resources.resources
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\obj\Debug\Lab_02.csproj.GenerateResource.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\obj\Debug\Lab_02.csproj.CoreCompileInputs.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\obj\Debug\Lab_02.exe
+C:\Users\Gangster's Paradise\Desktop\Database\Mids\Lab_02\Lab_02\obj\Debug\Lab_02.pdb
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\obj\Debug\Lab_02.csproj.AssemblyReference.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\obj\Debug\Lab2_Home.Delete_Student_Info.resources
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\obj\Debug\Lab_02.Properties.Resources.resources
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\obj\Debug\Lab_02.csproj.GenerateResource.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\obj\Debug\Lab_02.csproj.CoreCompileInputs.cache
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\obj\Debug\Lab_02.exe
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\obj\Debug\Lab_02.pdb
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\bin\Debug\Lab_02.exe.config
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\bin\Debug\Lab_02.exe
+C:\Users\Gangster's Paradise\Desktop\Database\Lab 02 Home\Lab_02\bin\Debug\Lab_02.pdb
