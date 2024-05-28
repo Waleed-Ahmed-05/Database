@@ -1,0 +1,74 @@
+Q1
+SELECT (SELECT CustomerID FROM Customers AS C2 WHERE C1.CustomerID = C2.CustomerID) AS CustomerID,OrderID,OrderDate FROM Customers AS C1 LEFT JOIN Orders ON C1.CustomerID = Orders.CustomerID
+***
+
+
+Q2
+SELECT CustomerID,(SELECT OrderID FROM Orders WHERE Customers.CustomerID = Orders.CustomerID) AS OrderID,(SELECT OrderID FROM Orders WHERE Customers.CustomerID = Orders.CustomerID) AS OrderDate FROM Customers WHERE CustomerID NOT IN (SELECT CustomerID FROM Orders)
+***
+
+
+Q3
+SELECT (SELECT CustomerID FROM Customers WHERE Customers.CustomerID = Orders.CustomerID) AS CustomerID,OrderID,OrderDate FROM Orders GROUP BY OrderID,OrderDate,Orders.CustomerID HAVING YEAR(OrderDate) = '1997' AND MONTH(OrderDate) = '7'
+***
+
+
+Q4
+SELECT CustomerID,(SELECT COUNT(*) FROM Orders WHERE Customers.CustomerID = Orders.CustomerID) AS totalorders FROM Customers
+***
+
+
+Q5
+SELECT (SELECT EmployeeID FROM Employees AS E3 WHERE E1.EmployeeID = E3.EmployeeID) AS EmployeeID,(SELECT FirstName FROM Employees AS E3 WHERE E1.EmployeeID = E3.EmployeeID) AS FirstName,(SELECT LastName FROM Employees AS E3 WHERE E1.EmployeeID = E3.EmployeeID) AS LastName FROM Employees AS E1,Employees AS E2 WHERE E2.EmployeeID % 2 = 0 OR E2.EmployeeID = 3 ORDER BY EmployeeID
+***
+
+
+Q6
+SELECT * FROM Products WHERE UnitPrice > (SELECT AVG(UnitPrice) FROM Products)
+***
+
+
+Q7
+SELECT MAX(UnitPrice) AS Second_Highest_Price FROM Products WHERE UnitPrice <> (SELECT MAX(UnitPrice) FROM Products)
+***
+
+
+Q8
+SELECT EmployeeID,OrderDate FROM Orders WHERE OrderDate >= '1996-07-04 00:00:00.000'  AND OrderDate<= '1997-08-04 00:00:00.000'
+***
+
+
+Q9
+SELECT CustomerID,(SELECT COUNT(*) FROM Orders WHERE Customers.CustomerID = Orders.CustomerID) AS Totalorders,(SELECT SUM(Quantity) FROM [Order Details] WHERE [Order Details].OrderID IN (SELECT OrderID FROM Orders WHERE Orders.CustomerID = Customers.CustomerID)) AS totalorders FROM Customers WHERE Country = 'USA'
+***
+
+
+Q10
+SELECT (SELECT CustomerID FROM Customers WHERE Customers.CustomerID = Orders.CustomerID) AS CustomerID,(SELECT CompanyName FROM Customers WHERE Customers.CustomerID = Orders.CustomerID) AS CompanyName,OrderID,OrderDate FROM Orders WHERE OrderDate = '1997-07-04 00:00:00.000'
+***
+
+
+Q11
+SELECT E1.FirstName + ' ' + E1.LastName + ' is older than his/her manager ' + (SELECT E2.FirstName + ' ' + E2.LastName + '.' FROM Employees AS E2 WHERE E1.ReportsTo = E2.EmployeeID) AS [Older Employees] FROM Employees AS E1 WHERE BirthDate < (SELECT BirthDate FROM Employees AS E2 WHERE E1.ReportsTo = E2.EmployeeID)
+***
+
+
+Q12
+SELECT E1.FirstName + ' ' + E1.LastName AS EmployeeName,(SELECT 2024 - YEAR(E1.BirthDate) FROM Employees AS E2 WHERE E1.ReportsTo = E2.EmployeeID) AS Age,(SELECT 2024 - YEAR(E2.BirthDate) FROM Employees AS E2 WHERE E1.ReportsTo = E2.EmployeeID) AS [Manager Age] FROM Employees AS E1 WHERE BirthDate < (SELECT BirthDate FROM Employees AS E2 WHERE E1.ReportsTo = E2.EmployeeID)
+***
+
+
+Q13
+SELECT (SELECT ProductName FROM Products WHERE Products.ProductID = [Order Details].ProductID) AS ProductName,(SELECT OrderDate FROM Orders WHERE [Order Details].OrderID = Orders.OrderID) AS OrderDate FROM [Order Details] WHERE [Order Details].OrderID = (SELECT OrderID FROM Orders WHERE ORDERDATE = '1997-08-08 00:00:00.000')
+***
+
+
+Q14
+SELECT ShipAddress,ShipCity,ShipCountry FROM Orders WHERE ShippedDate > RequiredDate AND EmployeeID = (SELECT EmployeeID FROM Employees WHERE FirstName = 'Anne')
+***
+
+
+Q15
+SELECT DISTINCT(ShipCountry) AS Country FROM Orders WHERE OrderID IN (SELECT OrderID FROM [Order Details] WHERE ProductID IN (SELECT ProductID FROM Products WHERE CategoryID IN (SELECT CategoryID FROM Categories WHERE CategoryName = 'Beverages')))
+***
+
